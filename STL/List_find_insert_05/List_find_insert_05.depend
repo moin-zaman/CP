@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1732674313 source:f:\cp\stl\list_find_insert_05\main.cpp
+	<iostream>
+	<list>
+	<iterator>
+	<algorithm>
+
