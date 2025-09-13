@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1757718127 source:f:\cp\pointer\dynamicmemory\main.c
+	<stdio.h>
+	<stdlib.h>
+
