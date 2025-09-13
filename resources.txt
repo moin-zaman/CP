@@ -1,0 +1,144 @@
+Pointer playlist YouTube link : 
+https://www.youtube.com/watch?v=pqSb2KbjkwY&list=PLgLCjVh3O6ShKtFjewv_nSaoyON0Au-OD
+
+
+STL Play List Link:
+https://www.youtube.com/watch?v=awY7oJ7wFhs&list=PLgLCjVh3O6Sgux985GYG22xkFt9z9Sq0_
+
+Time Complexity:
+part1:
+https://www.youtube.com/watch?v=iAsXN3er4vU&list=PLYJj1Z41SYevniy6y15EPD2MqWJg9hYW_
+
+part2:
+https://www.youtube.com/watch?v=CQZU5nxoPGU&list=PLYJj1Z41SYevniy6y15EPD2MqWJg9hYW_&index=2
+
+
+Competitive Programming Math Channel :
+
+https://www.youtube.com/@wrongsubmission4700
+
+
+Number Theory Play List:
+
+https://www.youtube.com/playlist?list=PL0G2Ga9ALv6k1JZwK0gLvP96uaP2BwPpo
+
+
+
+Maths For CP:
+
+
+1)  Number Theory (Must Know)
+
+GCD, LCM, Extended Euclidean Algorithm
+
+Prime numbers, Sieve of Eratosthenes
+
+Modular arithmetic:
+
+Modular addition/multiplication
+
+Modular inverse
+
+Fermat’s little theorem
+
+Chinese Remainder Theorem (basic)
+
+Divisors, factors, prime factorization
+
+Powers & Exponentiation: Binary exponentiation (modular)
+
+
+2)  Combinatorics (Essential)
+
+Permutations & Combinations
+
+Factorials & nCr modulo prime
+
+Pascal’s Triangle
+
+Inclusion-Exclusion principle (basic)
+
+Pigeonhole principle (contest-level problems)
+
+
+
+
+Basic Algebra:
+
+Simple equations, inequalities
+
+Fast exponentiation (binary exponentiation)
+
+Arithmetic progressions
+
+
+
+Geometry (optional, contest-dependent):
+
+Distances, midpoints
+
+Slopes, angles (basic)
+
+Occasionally needed for 2D problems
+
+
+
+Probability (optional) :
+
+Mostly easy/medium problems
+
+Rarely needed for 1500–1700 rating
+
+
+
+
+
+
+
+
+*** Data Structures:
+
+
+Data Structures:
+
+Arrays, Strings
+
+Linked Lists (optional, rarely used in contests)
+
+Stacks, Queues
+
+HashMaps / HashSets
+
+Trees (Binary Tree, BST)
+
+Graphs (Adjacency List / Matrix)
+
+Heaps / Priority Queues
+
+Algorithms:
+
+Sorting (QuickSort, MergeSort, etc.)
+
+Searching (Binary Search)
+
+Recursion & Backtracking
+
+Dynamic Programming (DP)
+
+Greedy Algorithms
+
+Graph Algorithms (BFS, DFS, Dijkstra, Kruskal, Prim)
+
+Divide & Conquer
+
+Sliding Window, Two Pointers
+
+৩. Problem Solving Skills
+
+Pattern recognition → কোন problem কোন algorithm দিয়ে solve হবে।
+
+Logical & analytical thinking।
+
+Practice through online judges:
+
+Codeforces, AtCoder, LeetCode, HackerRank, CodeChef, SPOJ
