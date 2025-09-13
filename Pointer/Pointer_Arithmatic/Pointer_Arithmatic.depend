@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1757756451 source:f:\cp\pointer\pointer_arithmatic\main.c
+	<stdio.h>
+	<stdlib.h>
+
