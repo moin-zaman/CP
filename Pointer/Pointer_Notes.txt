@@ -1,0 +1,23 @@
+--> Dangling Reference / Return Reference
+
+int* getValue()
+{
+    int x = 20;      // Local variable (stack এ)
+    return &x;       // এর address return হচ্ছে
+}
+
+int main()
+{
+    int *p = getValue();  // এখানে x আর নেই!
+    cout << *p << endl;   // Undefined behavior
+}
+
+getValue() ফাংশনের ভিতরে int x = 20; ডিক্লেয়ার করলে ওটা local variable → যেটা stack memory তে তৈরি হয়।
+
+ফাংশন শেষ হলে x এর lifetime শেষ হয়ে যায়, তার জায়গাটা stack থেকে free হয়ে যায়।
+
+আপনি &x return করেছেন, মানে এমন এক address যেটা আর valid না।
+
+main() এ গিয়ে সেই invalid address dereference করলে program undefined behavior করে (কখনো garbage value, কখনো crash, কখনো কিছুই না)।
+
+তাই value print হচ্ছে না।
