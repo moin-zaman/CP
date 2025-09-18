@@ -1,0 +1,71 @@
+📘 Notes on `map` in C++
+
+✅ What is `map`?
+- `map` is an associative container in C++ STL.
+- It stores key-value pairs (like a dictionary).
+- Each key is unique.
+- Keys are sorted automatically (by default in ascending order).
+- Defined in <map> header.
+
+Syntax:
+    map<KeyType, ValueType> name;
+
+-----------------------------------
+✅ Basic Operations
+
+1. Insert/Assign using [] operator:
+    m["dipta"] = 43;    // inserts ("dipta", 43)
+    m["arnob"] = 41;    // inserts ("arnob", 41)
+    m["arnob"] = 45;    // updates value of key "arnob" to 45
+
+2. Insert using insert():
+    m.insert(make_pair("nabil", 42));
+
+3. Accessing Elements:
+    cout << m["dipta"];   // prints 43
+
+-----------------------------------
+✅ Iterators in map
+- Iterators point to pair<key, value>.
+- it->first  -> key
+- it->second -> value
+
+Example:
+    map<string, int>::iterator it;
+    it = m.begin();
+    cout << it->first << " " << it->second;
+
+-----------------------------------
+✅ Traversing a map
+
+1. Using iterator in for loop:
+    for(it = m.begin(); it != m.end(); it++) {
+        cout << it->first << " " << it->second << endl;
+    }
+
+2. Range-based for loop:
+    for(auto &x : m) {
+        cout << x.first << " " << x.second << endl;
+    }
+
+-----------------------------------
+✅ Key Properties
+- Keys are unique -> duplicate keys overwrite old values.
+- Sorted order -> stored in ascending order by key.
+- Time complexity:
+    - Insertion, deletion, search -> O(log n)
+    - Traversal -> O(n)
+
+-----------------------------------
+✅ Example Output (for given code)
+
+Input map:
+    m["dipta"] = 43;
+    m["arnob"] = 41;
+    m["arnob"] = 45;   // overwrites previous value
+    m.insert(make_pair("nabil", 42));
+
+Stored in sorted order by key:
+    arnob 45
+    dipta 43
+    nabil 42
