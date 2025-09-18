@@ -1,0 +1,84 @@
+We have to use 
+#include <vector> header file
+
+** For declaring a vectore :
+
+vector_keyword <data_type> any_name : -> vector <int> vec;
+
+
+** To get the vector size we can use: -> vector_name.size() ex: vec.size() .
+
+
+** push in vector  :  vec.push_back(34);
+
+
+-> Another Way declaration :
+
+vector <int> vec(3, 0)  -> here 3 is size of the vector and all the 3 elements will be 0
+
+
+-> We can access vector using iterator :
+First we have to declare a vector 
+Then we have to decclare a iterator
+
+vector <int> vec;
+vector <int>::iterator it;
+
+for(int i = 1; i <= 5; i++)
+    {
+        vec.push_back(i);
+    }
+
+then we have to refer the first element address of a vector;
+
+it = vec.begin();
+
+now we can print
+
+for(int i = 0; i < vec.size(); i++)
+    {
+        cout << *it << " ";
+        *(++it);
+    }
+
+We can access another way 
+
+
+for(it = vec.begin(); it != vec.end(); it++)
+    {
+        cout << *it << " ";
+    }
+
+এখানে vec.begin() পয়েন্ট করছে প্রথম উপাদান (1)-এর দিকে।
+
+আর vec.end() পয়েন্ট করছে 5-এর পরের "কাল্পনিক" পজিশনে।
+এটাকে বলা হয় past-the-end iterator।
+
+
+-->Sort a vector:
+
+sort(vec.begin(), vec.end())  --> it will be sort in an ascending order
+
+sort(vec.begin(), vec.begin() + 3); --> it will sort first 3 elements or till before 3rd index.
+
+--> descending order sort:
+
+we have to write function first
+
+
+bool myfunc(int a, int b)
+{
+    return (a > b);
+}
+
+sort(vec.begin(), vec.end(), myfunc);
+
+
+--> Sort an array :
+int arr[5] = {2, 5, 1, 7, 3};
+ sort(arr+2, arr+5);
+
+
+
+
+
