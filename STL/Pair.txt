@@ -1,0 +1,77 @@
+What is pair?
+
+pair is a container in C++ STL (Standard Template Library).
+
+It stores two values (may be of different data types).
+
+Defined in <utility> header.
+pair<T1, T2> name;
+
+
+--> Ways to Create a pair]
+
+1) Default declaration:
+pair<string, int> p;
+
+
+2) Initialization using constructor:
+pair<string, int> p("dipta", 21);
+
+
+3) Using make_pair:
+pair<string, int> p = make_pair("dipta", 21);
+
+
+4) Assigning directly:
+p.first = "dipta";
+p.second = 21;
+
+
+--> Accessing Values
+.first → first element
+.second → second element
+
+cout << p.first << " " << p.second << endl;
+
+
+--> Using pair with Containers
+
+pair is commonly used inside vectors, maps, sets etc.
+
+Example with vector of pairs:
+
+vector<pair<int, string>> v;
+
+v.push_back(make_pair(21, "dipta"));
+v.push_back(make_pair(22, "nabil"));
+v.push_back(make_pair(20, "arnob"));
+
+
+Access:
+cout << v[0].first;   // 21
+cout << v[0].second;  // dipta
+
+
+--> Iterating with Iterator
+
+for(auto it = v.begin(); it != v.end(); it++) {
+    cout << it->first << " " << it->second << endl;
+}
+
+or using range-based loop:
+for(auto &x : v) {
+    cout << x.first << " " << x.second << endl;
+}
+
+
+
+--> To store two related values together.
+
+Common in:
+
+Competitive Programming (CP)
+
+Graph problems (storing edge: (u, v))
+
+Maps (map<key, value> is internally a pair).
+
