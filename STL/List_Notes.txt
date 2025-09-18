@@ -1,0 +1,131 @@
+Header file: #include <list>
+
+1)List Declaration: 
+
+list <data_type> list_name;
+list <float> mylist;
+
+**Note: list এর element sequentially stored হয় কিন্তু memory contiguous না।**
+
+
+2)List Size:
+
+ mylist.size();
+
+cout << "List size: " << mylist.size() << endl;
+
+
+3) Adding Elements: --> 
+
+Push at the back: 
+mylist.push_back(value);
+
+mylist.push_back(10); // List: 10
+mylist.push_back(-1); // List: 10 -1
+
+
+Push at the front: 
+mylist.push_front(value);
+mylist.push_front(5);  // List: 5 10 -1
+mylist.push_front(20); // List: 20 5 10 -1
+
+Note: list এ array-style indexing [ ] কাজ করে না।
+
+
+
+4) Accessing Elements using Iterator: 
+
+list<float>::iterator it;
+
+Traversing List:
+for(it = mylist.begin(); it != mylist.end(); it++)
+{
+    cout << *it << " ";
+}
+mylist.begin() → first element
+mylist.end() → past-the-end element (last element এর পরে)
+
+
+5) Sorting a List
+
+a) Ascending Order:
+mylist.sort();
+mylist.sort();  // 20 5 10 -1 → -1 5 10 20
+
+b) Descending Order:
+mylist.sort(greater<float>());
+
+
+c) Using Custom Function:
+
+bool myfunc(float a, float b)
+{
+    return (a > b);  // descending
+}
+mylist.sort(myfunc);
+
+
+
+
+6) Removing Elements
+
+mylist.pop_front();  // remove first element
+mylist.pop_back();   // remove last element
+
+
+
+7) Clear and Reversing a whole list:
+
+mylist.clear();
+mylist.reverse();
+
+s
+8) Important Notes
+
+Random access possible না → iterator ব্যবহার করতে হবে।
+Memory contiguous না → linked structure।
+push_back() / push_front() খুব efficient।
+
+
+
+9) Array দিয়ে List Initialize করা
+
+int ar[5] = {5, 2, 1, 6, 3};
+list<int> mylist(ar, ar+5);
+
+
+10) Iterator Move করা
+
+it = mylist.begin();  // প্রথম element (5) কে point করছে
+it++;                 // এখন 2 তে
+it++;                 // এখন 1 তে
+
+
+11) Insert Element at Specific Position
+
+mylist.insert(it, 7);
+এখানে it বর্তমানে 1-কে point করছে।
+তাহলে 7 1 এর আগে insert হবে।
+
+mylist = {5, 2, 7, 1, 6, 3}
+insert() করার পরেও iterator it এখনো আগের element (1)-কেই point করছে।
+
+
+
+12) it = find(mylist.begin(), mylist.end(), 6);
+এখানে <algorithm> হেডার লাগবে।
+find(first, last, value) → first থেকে last পর্যন্ত খুঁজবে, যদি element পাওয়া যায় তাহলে সেই element-এর iterator return করবে।
+ না পেলে return করবে mylist.end()।
+
+
+13) insert() ব্যবহার করা
+mylist.insert(it, 7);
+
+
+14) erase() :
+
+it = find(mylist.begin(), mylist.end(), 6);
+    
+mylist.erase(it);
+
+
